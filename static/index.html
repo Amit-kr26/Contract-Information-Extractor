@@ -1,0 +1,32 @@
+
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contract Extractor</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Contract Information Extractor</h1>
+        </header>
+        <main>
+            <form id="uploadForm" class="upload-form">
+                <label for="fileInput" class="file-label">Upload Contract:</label>
+                <input type="file" id="fileInput" name="file" accept=".pdf, .docx" required class="file-input" />
+                <button type="submit" class="btn upload-btn">Upload Contract</button>
+            </form>
+            <div id="result" class="result"></div>
+            <div id="downloadLink" style="display: none;" class="download-section">
+                <a href="/download" id="downloadButton" class="btn download-btn">Download Extracted Data</a>
+            </div>
+        </main>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
+</html>
